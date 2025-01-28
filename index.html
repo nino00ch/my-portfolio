@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <box-Icons> -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "WX9XZ6Q9CoXJQDUPS",
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <header>
+      <a href="#home" class="logo">
+        Port<span>folio</span>
+        <i class="bx bxs-briefcase-alt-2"></i>
+      </a>
+      <i class="bx bx-menu" id="menu-icon"></i>
+      <div class="navbar">
+        <ul>
+          <a href="#home" class="active">Home</a>
+          <a href="#About">About</a>
+          <a href="#Services">Services</a>
+          <a href="#Portfolio">Portfolio</a>
+          <a href="#Contact">Contact</a>
+        </ul>
+      </div>
+    </header>
+    <!-- <header-content> -->
+    <div class="header-content" id="home">
+      <div class="text">
+        <p>Hello! It's <span>Ines</span></p>
+        <h1>I am Algerian</h1>
+        <h2>
+          And I am a <span class="fullstack-part">full-stack developer</span>
+        </h2>
+        <div class="icons">
+          <a
+            href="https://instagram.com/enol._.aaa"
+            target="_blank"
+            title="Instagram"
+          >
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a href="https://github.com/nino00ch" target="_blank" title="GitHub">
+            <i class="bx bxl-github"></i>
+          </a>
+          <!-- <a
+            href="https://www.linkedin.com/in/Ines-Chabla"
+            target="_blank"
+            title="LinkedIn"
+          >
+            <i class="bx bxl-linkedin-square"></i>
+          </a> -->
+        </div>
+        <a href="images/My Resume (1).pdf" download class="btn"
+          >Download my Resume</a
+        >
+      </div>
+      <div class="image">
+        <img class="My-photo" src="images/ines.jpg" alt="" />
+      </div>
+    </div>
+    <!-- section-About -->
+    <section class="About" id="About">
+      <!-- <div class="About-img">
+        <img class="about-img" src="images/PC.jpg" alt="" />
+      </div> -->
+      <div class="About-text">
+        <h2 class="title">About <span>Me</span></h2>
+        <h1>Full-stack Developer !</h1>
+        <p>
+          I am a passionate full-stack developer with a strong foundation in
+          both front-end and back-end technologies. I specialize in creating
+          dynamic and responsive web applications that deliver seamless user
+          experiences. From developing intuitive interfaces using modern
+          JavaScript frameworks like React, to building robust back-end systems
+          with Node.js and Express, I enjoy solving complex problems and turning
+          ideas into functional, scalable solutions. I am constantly learning
+          and exploring new tools and technologies to stay ahead in this
+          fast-evolving field.
+        </p>
+        <a href="#Services" class="btn">See more</a>
+      </div>
+    </section>
+    <!-- section-Services -->
+    <section class="Services" id="Services">
+      <h2 class="title" id="Services-title"><span>S</span>ervices</h2>
+      <div class="services-container">
+        <div class="services-box">
+          <i class="bx bx-code-alt"></i>
+          <h2>Custom Website Development</h2>
+          <p>
+            I build custom websites that combine great design and functionality.
+            Whether it's a portfolio or business site, I ensure your website is
+            responsive, user-friendly, and aligned with your goals. I focus on
+            performance and seamless user experiences across devices. Each site
+            is crafted to reflect your unique brand and vision.
+          </p>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-cart-download"></i>
+          <h2>E-commerce Development</h2>
+          <p>
+            I develop secure, scalable online stores with integrated payment
+            gateways and inventory management. I ensure an intuitive shopping
+            experience, optimized for both desktop and mobile users. My
+            solutions are designed to grow with your business. Whether you're
+            launching or upgrading, I build e-commerce platforms that deliver
+            results.
+          </p>
+        </div>
+        <div class="services-box">
+          <i class="bx bx-wrench"></i>
+          <h2>Maintenance and Optimization</h2>
+          <p>
+            I offer comprehensive maintenance to keep your website secure, fast,
+            and fully updated. My optimization services focus on improving
+            speed, performance, and mobile compatibility. I monitor and fix any
+            issues, ensuring your site stays secure and compliant with the
+            latest web standards. Regular updates and fixes help your site run
+            smoothly
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- section-portfolio -->
+    <section class="Portfolio" id="Portfolio">
+      <h2 class="title" id="Services-title"><span>My </span> Projects</h2>
+      <div class="row">
+        <div class="Portfolio-box">
+          <p>Furniture store</p>
+          <img src="images/EcommerceProject.png" alt="" />
+        </div>
+        <div class="Portfolio-box">
+          <p>Movies Web</p>
+          <img src="images/Cover.png" alt="" />
+        </div>
+        <div class="Portfolio-box">
+          <p>front-end</p>
+          <img src="images/challenge-251.png" alt="" />
+        </div>
+        <div class="Portfolio-box">
+          <p>TODO List</p>
+          <img src="images/TodoList.png" alt="" />
+        </div>
+        <div class="Portfolio-box">
+          <p>Apartment website</p>
+          <img src="images/apartment-multi-page-website.png" alt="" />
+        </div>
+        <div class="Portfolio-box">
+          <p>Music generator</p>
+          <img src="images/challenge-day-195.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <!-- section-contact -->
+    <section class="Contact" id="Contact">
+      <h2 class="title" id="Services-title"><span>C</span>ontact</h2>
+      <div class="Contact-text">
+        <p>
+          If you have any questions, need assistance, or need a custom website
+          development project, please don't hesitate to reach out. I'd be happy
+          to help.
+        </p>
+      </div>
+      <form action="#">
+        <div class="contact-input">
+          <div class="input-box">
+            <input
+              type="text"
+              name="name"
+              placeholder="Full Name"
+              class="item"
+              id="name"
+              autocomplete="off"
+              required
+            />
+
+            <input
+              type="email"
+              name="email"
+              placeholder="Email Address"
+              class="item"
+              id="email"
+              autocomplete="off"
+              required
+            />
+          </div>
+          <div class="input-box">
+            <input
+              type="tel"
+              name="phone"
+              placeholder="Phone Number"
+              class="item"
+              id="phone"
+              autocomplete="off"
+              required
+              pattern="^\+?[0-9\s\-\(\)]{7,15}$"
+              title="Enter a valid phone number"
+            />
+
+            <input
+              type="text"
+              name="Subject"
+              placeholder="Subject"
+              class="item"
+              id="subject"
+              autocomplete="off"
+              required
+            />
+          </div>
+        </div>
+        <textarea
+          name="message"
+          id="message"
+          cols="30"
+          rows="6"
+          placeholder="Your Message"
+          class="item"
+          autocomplete="off"
+        ></textarea>
+
+        <!-- <a href="" class="btn" id="send" onclick="sendMail()">Send</a> -->
+        <button type="button" class="btn" id="send" onclick="sendMail()">
+          Send
+        </button>
+      </form>
+    </section>
+    <!-- Copyright -->
+    <section class="Copyright">
+      <p>Copyright &#169; 2025 Designed by Nino</p>
+      <a href="#home" class="btn"> Return to Home</a>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
