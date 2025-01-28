@@ -74,6 +74,7 @@ header {
 .header-content {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 25%;
   padding: 80px 60px;
   /* background: linear-gradient(135deg, var(--hover-color), var(--bg-color)); */
@@ -212,8 +213,16 @@ span {
 .About-text {
   justify-items: center;
   align-items: center;
-  margin-top: 80px;
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  /* margin-top: 80px; */
   color: var(--text-color);
+}
+
+.About-text p{
+ text-align: center;
+
 }
 .title {
   font-size: 35px;
@@ -236,6 +245,11 @@ span {
   text-align: center;
   border-radius: 10px;
   cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
 }
 #Services-title {
   display: flex;
@@ -307,7 +321,8 @@ span {
   display:flex;
   justify-content: center;
   flex-direction: column;
-  
+  align-items: center;
+
 
 }
 
@@ -316,7 +331,7 @@ span {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  
+  width: 50%;
 }
 
 .contact-form{
@@ -325,6 +340,8 @@ span {
   flex-direction: column;
   align-items: center;
   gap: 10px;
+  width: 100%;
+  text-align: center;
 }
 
 
@@ -408,9 +425,14 @@ textarea::placeholder {
 /* menu bar */
 #menu-icon {
   font-size: 30px;
-  margin-right: 20%;
+  /* margin-right: 20%; */
   cursor: pointer;
   display: none;
+}
+
+
+.Contact-text p {
+ text-align: center;
 }
 
 /* --------------------Responsive--------------------- */
@@ -449,6 +471,7 @@ textarea::placeholder {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 10px;
   }
   .image {
     width: 80%;
@@ -460,6 +483,29 @@ textarea::placeholder {
   }
   .About-text {
     max-width: 100%;
+    margin: 0px;
+    padding:20px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .About-text h1 {
+    font-size: 18px;
+  }
+
+  .About-text p {
+    font-size: 14px;
+  }
+  .services-box h2{
+    font-size: 18px;
+  }
+
+  .services-box p{
+    font-size: 16px;
+  }
+
+  .contact_content {
+    width: 100%;
   }
   .services-container {
     flex-direction: column;
@@ -468,8 +514,11 @@ textarea::placeholder {
     width: 100%;
     margin-bottom: 20px;
   }
+  .Services {
+    padding:10px;
+  }
   .Portfolio .row {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
   }
   .Contact {
     width: 100%;
@@ -529,6 +578,7 @@ textarea::placeholder {
     line-height: 1.5;
     margin-bottom: 20px;
     font-size: 20px;
+    text-align: center;
   }
 
   .contact-input {
