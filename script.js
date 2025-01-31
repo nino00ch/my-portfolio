@@ -46,3 +46,43 @@ function sendMail() {
       alert("Failed to send the message. Please try again later.");
     });
 }
+//function animation text
+document.addEventListener("DOMContentLoaded", () => {
+  const fullstackPart = document.querySelector(".fullstack-part");
+  const texts = ["full-stack developer"];
+  let index = 0;
+  let charIndex = 0;
+
+  function typeText() {
+    // Réinitialiser le contenu avant de commencer
+    if (index === 0 && charIndex === 0) {
+      fullstackPart.textContent = "";
+    }
+
+    if (charIndex < texts[index].length) {
+      fullstackPart.textContent += texts[index][charIndex];
+      charIndex++;
+      setTimeout(typeText, 100); // Vitesse d'écriture
+    } else {
+      setTimeout(() => {
+        charIndex = 0; // Réinitialiser l'index des caractères
+        typeText(); // Relancer l'animation
+      }, 2000); // Attendre avant de réécrire
+    }
+  }
+
+  typeText();
+});
+//function animation bar skils :
+window.addEventListener("scroll", function () {
+  const skillBars = document.querySelectorAll(".skill-bar-fill");
+  const triggerBottom = window.innerHeight * 0.9;
+
+  skillBars.forEach((bar) => {
+    const barTop = bar.getBoundingClientRect().top;
+
+    if (barTop < triggerBottom) {
+      bar.style.width = bar.dataset.skill + "%";
+    }
+  });
+});
